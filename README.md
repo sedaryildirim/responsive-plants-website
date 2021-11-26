@@ -30,8 +30,8 @@ Code-along Challenge with Bedimcode for a Halloween website
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/sedaryildirim/responsive-halloween-project)
-- Live Site URL: [Github Pages](https://sedaryildirim.github.io/responsive-halloween-project/)
+- Solution URL: [Github Repo](https://github.com/sedaryildirim/responsive-plants-website)
+- Live Site URL: [Github Pages](https://sedaryildirim.github.io/responsive-plants-website/)
 
 ## My process
 
