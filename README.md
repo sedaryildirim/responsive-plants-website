@@ -55,15 +55,18 @@ Code-along Challenge with Bedimcode for a Halloween website
 
 *when .steps__card:hover is in effect, it transforms .steps__card-number by translateY(-.25rem);*
 
+```css
 .steps__card:hover .steps__card-number {
   transform: translateY(-.25rem);
 }
+```
 
 - **Scroll Reveal**
 
 *const sr identifier sets base states for SR*
 *sr.reveal is called at the bottom and base stats can be changed if needed via further inline variables* 
 
+```java
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
@@ -78,7 +81,7 @@ sr.reveal('.home__social', {delay: 600})
 sr.reveal('.about__img, .contact__box', {origin: 'left'})
 sr.reveal('.about__data, .contact__form', {origin: 'right'})
 sr.reveal('.steps__card, .product__card, .questions__group, .footer', {interval: 100})
-
+```
 
 ### Continued development
 
@@ -91,10 +94,12 @@ sr.reveal('.steps__card, .product__card, .questions__group, .footer', {interval:
 *above works by hiding items out of a set width/height of a parent container*
 **questions content has a paragraph in it, its height was set to 0, then the overflow (which was the paragraph) is now hidden**
 
+```css
 .questions__content {
   overflow: hidden;
   height: 0;
 }
+```
 
 ### Useful resources
 
