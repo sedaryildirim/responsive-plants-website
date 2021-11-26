@@ -48,13 +48,53 @@ Code-along Challenge with Bedimcode for a Halloween website
 
 - learned how to use emmet correctly with class chaining
 - fixed several errors with troubleshooting for display issues
-- better understanding of developer tools whislt searching for bugs
+- better understanding of developer tools whilst searching for bugs
 - learned more css shorthand
 - better understanding of bem naming structure
+- **realized how the below works**
+
+*when .steps__card:hover is in effect, it transforms .steps__card-number by translateY(-.25rem);*
+
+.steps__card:hover .steps__card-number {
+  transform: translateY(-.25rem);
+}
+
+- **Scroll Reveal**
+
+*const sr identifier sets base states for SR*
+*sr.reveal is called at the bottom and base stats can be changed if needed via further inline variables* 
+
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    // reset: true
+})
+
+sr.reveal('.home__data')
+sr.reveal('.home__img', {delay: 500})
+sr.reveal('.home__social', {delay: 600})
+sr.reveal('.about__img, .contact__box', {origin: 'left'})
+sr.reveal('.about__data, .contact__form', {origin: 'right'})
+sr.reveal('.steps__card, .product__card, .questions__group, .footer', {interval: 100})
+
 
 ### Continued development
 
-add theme color selector
+- research how position: relative works more in depth
+- does position absolute work in the current div
+- how do ::after and ::before work
+- research :not
+
+- how does overflow:hidden work
+*above works by hiding items out of a set width/height of a parent container*
+**questions content has a paragraph in it, its height was set to 0, then the overflow (which was the paragraph) is now hidden**
+
+.questions__content {
+  overflow: hidden;
+  height: 0;
+}
 
 ### Useful resources
 
